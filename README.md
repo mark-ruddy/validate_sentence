@@ -12,7 +12,7 @@ go build .
 Enter sentence with user input and enable debug logs to view reason for sentence being invalid:
 
 ```
-/validate_sentence --debug
+./validate_sentence --debug
 Enter a sentence: "The quick brown fox said "hello Mr lazy dog."
 DEBU[0017] Sentence has unequal quotes: '"The quick brown fox said "hello Mr lazy dog."'
 Invalid sentence: '"The quick brown fox said "hello Mr lazy dog."'
