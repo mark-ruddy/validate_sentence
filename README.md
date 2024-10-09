@@ -2,11 +2,19 @@
 CLI Tool for validating sentences using Go
 
 ## Usage
-Compile binary and pass sentence as flag:
+Clone repo and compile binary:
 
 ```
+git clone https://github.com/mark-ruddy/validate_sentence
+cd validate_sentence
 go build .
+```
+
+Pass sentence as flag:
+
+```
 ./validate_sentence -sentence "A correct sentence."
+Valid sentence: 'A correct sentence.'
 ```
 
 Enter sentence with user input and enable debug logs to view reason for sentence being invalid:
