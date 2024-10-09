@@ -1,5 +1,5 @@
 # Validate Sentence
-This Go program can be used to validate a sentence.
+CLI Tool for validating sentences using Go
 
 ## Usage
 Compile binary and pass sentence as flag:
