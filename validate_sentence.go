@@ -46,7 +46,7 @@ func validateSentence(sentence string) bool {
 
 func startsWithUppercase(sentence string) bool {
 	offset := 0 // offset if sentence starts with a quote
-	if sentence[0] == '"' || sentence[0] == '\'' {
+	if sentence[0] == '"' {
 		offset = 1
 		if len(sentence) < 2 {
 			log.Debugf("Sentence is too short: '%s'", sentence)
@@ -61,9 +61,8 @@ func startsWithUppercase(sentence string) bool {
 }
 
 func hasEqualQuotes(sentence string) bool {
-	singleQuoteCount := strings.Count(sentence, `'`)
-	doubleQuoteCount := strings.Count(sentence, `"`)
-	if singleQuoteCount%2 != 0 || doubleQuoteCount%2 != 0 {
+	quoteCount := strings.Count(sentence, `"`)
+	if quoteCount%2 != 0 {
 		return false
 	}
 	return true

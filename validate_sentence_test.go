@@ -35,6 +35,7 @@ func TestInvalidSentences(t *testing.T) {
 		"\"The quick brown fox said \"hello Mr lazy dog.\"",
 		"One lazy dog is too few, 12 is too many.",
 		"Are there 11, 12, or 13 lazy dogs?",
+		"This sentence doesn't have punctation",
 	}
 
 	for _, sentence := range invalidSentences {
